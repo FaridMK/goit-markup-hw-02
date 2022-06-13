@@ -1,0 +1,65 @@
+
+
+/* main color #212121 */
+/* second color #757575 */
+/* logo first part #2196F3 */
+/* logo second part hdr #000000 */
+/* logo second part ftr and ftr #FFFFFF*/
+/* main background #E5E5E5 */
+/* second background #F5F4FA */
+/* ftr background #2F303A */
+
+:root {
+    --main-color: #212121;
+    --second-color: #757575;
+}
+
+.body {
+    background-color:#E5E5E5;
+    color: var(--main-color);
+    font-family: Roboto, serif;
+}
+
+.fst-part-logo {
+    color:#2196F3
+}
+
+.sd-part-logo-hdr {
+    color:#000000 
+}
+
+.logo-font {
+    font-family: Raleway;
+}
+
+.site-nav a {
+    color: var(--main-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #2196F3;
+}
+
+.contacts a {
+    color: var(--main-color);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: #2196F3;
+}
+
+.h-one {
+    color: #FFFFFF;
+}
+
+.hero-btn {
+   background-color: #2196F3
+}
+
+.hero span {
+    color: #FFFFFF
+}
+
+

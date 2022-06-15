@@ -1,24 +1,29 @@
 
 
-/* main text color #757575 */
-/* second text color #212121 */
-/* logo first part #2196F3 */
-/* logo second part hdr #000000 */
-/* logo second part ftr #FFFFFF*/
-/* main background #E5E5E5 */
-/* second background #F5F4FA */
-/* ftr background #2F303A */
-
+/* main text color rgba(117, 117, 117, 1) */
+/* second text color rgba(33, 33, 33, 1) */
+/* logo first part and btn rgba(33, 150, 243, 1)*/
+/* btn hover color  rgba(24, 140, 232, 1) */
+/* logo second part hdr rgba(0, 0, 0, 1)*/
+/* logo second part ftr rgba(255, 255, 255, 1)*/
+/* main background rgba(255, 255, 255, 1) */
+/* second background rgba(245, 244, 250, 1) */
+/* ftr and hero background rgba(47, 48, 58, 1) */
 
 :root {
-    --main-text-color: #757575;
-    --second-text-color: #212121;
+    --main-text-color: rgba(117, 117, 117, 1);
+    --second-text-color: rgba(33, 33, 33, 1);
+    --main-background-color: rgba(255, 255, 255, 1);
+    --second-background: rgba(245, 244, 250, 1);
+    --logo-first-part-and-btn: rgba(33, 150, 243, 1);
+    --portfolio-card-background: rgba(238, 238, 238, 1);
 }
 
-.body {
-    background-color:rgba(255, 255, 255, 1);;
+
+body {
+    background-color: var(--main-background-color);
     color: var(--main-text-color);
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, Raleway, sans-serif;
 }
 
 .list {
@@ -33,14 +38,20 @@
     color:#000000 
 }
 
-.logo-font {
+.logo-font a {
+    text-decoration-line: none;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
 }
 
+.site-nav .current {
+    color: #2196F3;
+}
+
 .site-nav a {
+    text-decoration-line: none;
     color: var(--second-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -48,15 +59,16 @@
     letter-spacing: 0.02em;
 }
 
+
 .site-nav a:hover,
-.site-nav a:focus,
-.site-nav a:active
+.site-nav a:focus
 {
     color: #2196F3;
 }
 
 
 .contacts a {
+    text-decoration-line: none;
     color: var(--main-text-color);
     font-weight: 500;
     ont-size: 14px;
@@ -68,6 +80,7 @@
 .contacts a:focus {
     color: #2196F3;
 }
+
 
 .hero {
     background-color:rgba(47, 48, 58, 1);;
@@ -85,11 +98,18 @@
 }
 
 .hero-btn {
-   background-color: #2196F3
+   background-color: rgba(33, 150, 243, 1)
+}
+
+.hero-btn:hover {
+    background-color:rgba(24, 140, 232, 1) ;
 }
 
 .hero-btn-words {
-    color: #FFFFFF
+    color: var(--main-background-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
 }
 
 
@@ -98,7 +118,7 @@
 }
 
 .spec-title {
-    color: var(--second-text-color)
+    color: var(--second-text-color);
 }
 
 .spec-title {
@@ -108,13 +128,14 @@
 }
 
 .spec-text {
+    color: var(--main-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
 
 .projects-title {
-    color: var(--second-text-color)
+    color: var(--second-text-color);
 }
 
 .projects-title {
@@ -125,20 +146,20 @@
 }
 
 .teamlist {
-    background-color: rgba(245, 244, 250, 1);
+    background-color: var(--second-background);
 }
 .team {
-    color: var(--second-text-color)
+    color: var(--second-text-color);
 }
 
 .team {
     font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
+    font-size: 36px;
+    line-height: 42px;
 }
 
 .team-name {
-    color: var(--second-text-color)
+    color: var(--second-text-color);
 }
 
 .team-name {
@@ -153,12 +174,17 @@
     line-height: 1.18;
 }
 
+.card {
+    background-color: #FFFFFF;
+    width: 270px;
+}
+
 .ftr {
     background-color:#2F303A;
 }
 
 .sd-part-logo-ftr {
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .address {
@@ -181,24 +207,52 @@
 }
 
 .portfolio-filter button {
-    color: var(--main-text-color)
+    background-color: var(--second-background);
+    color: var(--main-text-color);
 }
 
 
 .portfolio-filter button:hover,
 .portfolio-filter button:focus {
-    background-color: #2196F3
+    background-color: var(--logo-first-part-and-btn);
+    color: var(--main-background-color);
 }
 
-.portfolio-filter span:hover,
-.portfolio-filter span:focus {
-    color: #FFFFFF
+
+.btn-one button {
+    width: 73px;
+    height: 38px;
 }
+
+.btn-two button {
+    width: 128px;
+    height: 38px;
 }
-.portfolio-filter {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+
+.btn-thr button {
+    width: 145px;
+    height: 38px;
+}
+
+.btn-f button {
+    width: 103px;
+    height: 38px;
+}
+
+.btn-five button {
+    width: 130px;
+    height: 38px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.portfolio-filter button {
+color: var(--second-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
 }
 
 .portfolio-list {
@@ -217,7 +271,21 @@
 
 .card-disc {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.87;
+    font-size: 16px;
+    line-height: 1.87;
 }
 
+.portfolio-card {
+    background-color: var(--main-background-color);
+    width: 370px;
+    height: 404px;
+}
+
+.portfolio-card a {
+    text-decoration-line: none;
+    color: var(--main-text-color);
+}
+
+.address-ftr a {
+    text-decoration-line: none;
+}

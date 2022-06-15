@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -17,14 +16,13 @@
     <header class="header">
         
         <div class="logo-font">
-             <a class="fst-part-logo" href="./index.html">Web
-            <span class="sd-part-logo-hdr">Studio</span>
+             <a class="fst-part-logo" href="./index.html">Web<span class="sd-part-logo-hdr">Studio</span>
              </a>
         </div>
     
         <nav class="header-nav">
             <ul class="site-nav list">
-                <li> <a href="./studio.html">Студия</a></li>
+                <li> <a class="current" href="./studio.html">Студия</a></li>
                 <li> <a href="./portfolio.html">Портфолио</a></li>
                 <li> <a href="">Контакты</a></li>
             </ul>
@@ -87,24 +85,32 @@
             <h2 class="team">Наша команда</h2>
             <ul class="list">
                 <li>
-                    <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
+                   <div class="card">
+                       <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
                     <h3 class="team-name">Игорь Демьяненко</h3>
                     <p class="team-pos">Product Designer</p>
+                    </div>
                 </li>
                 <li>
+                    <div class="card">
                     <img src="./images/olga.jpg" alt="Ольга Репина" width="270" />
                     <h3 class="team-name">Ольга Репина</h3>
                     <p class="team-pos">Frontend Developer</p>
+                    </div>
                 </li>
                 <li>
+                    <div class="card">
                     <img src="./images/nikolay.jpg" alt="Николай Тарасов" width="270" />
                     <h3 class="team-name">Николай Тарасов</h3>
                     <p class="team-pos">Marketing</p>
+                    </div>
                 </li>
                 <li>
+                    <div>
                     <img src="./images/mixail.jpg" alt="Михаил Ермаков" width="270" />
                     <h3 class="team-name">Михаил Ермаков</h3>
                     <p class="team-pos">UI Designer</p>
+                    </div>
                 </li>
             </ul>
 
